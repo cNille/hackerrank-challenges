@@ -9,6 +9,9 @@ object Solution {
     var b1 = sc.nextInt();
     var b2 = sc.nextInt();
     //TODO: Implement
+    val aScore = List(a0 > b0, a1 > b1, a2 > b2).map(if(_) 1 else 0).reduceLeft(_+_)
+    val bScore = List(a0 < b0, a1 < b1, a2 < b2).map(if(_) 1 else 0).reduceLeft(_+_)
+    println(s"$aScore $bScore")
   }
 }
 

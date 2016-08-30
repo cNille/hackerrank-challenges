@@ -12,7 +12,6 @@ object Solution {
       w(a_i) = sc.nextInt();
     }
 
-
     val res = x.zip(w).map( x => x._1 * x._2).sum / w.sum.toFloat
     val rounded = Math.round(res * 10.0) / 10.0
     println(rounded)

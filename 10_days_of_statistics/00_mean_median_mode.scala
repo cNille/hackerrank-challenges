@@ -19,7 +19,7 @@ object Solution {
     // Sort array
 
     // Calc median
-    val median = (arrSort(l/2-1) + arrSort(l/2-l%2)) / 2.0
+    val median = (arrSort(l/2) + arrSort(l/2-1+l%2)) / 2.0
     println(median)
 
     // Calc mode
